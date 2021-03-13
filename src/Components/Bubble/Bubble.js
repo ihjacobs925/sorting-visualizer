@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BarChart from "./BarChart";
 import "./App.css";
 
-function App() {
+function Bubble() {
   const [iteration, setIteration] = useState(0);
   const [count, setcount] = useState(0);
   const [names, setnames] = useState(0);
@@ -19,7 +19,7 @@ function App() {
     "palegreen",
     "olivedrab",
     "antiquewhite",
-    "	yellow",
+    "yellow",
     "lightsteelblue",
     "lightsalmon",
   ]);
@@ -177,4 +177,4 @@ function App() {
   );
 }
 
-export default App;
+export default Bubble;
