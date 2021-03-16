@@ -8,6 +8,7 @@ import Bubble from "./Components/Bubble/Bubble";
 import Selection from './Components/Selection/Selection';
 import Insertion from './Components/Insertion/Insertion';
 import Quick from './Components/Quick/Quick';
+import Merge from './Components/Merge/Merge';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/selection" component={Selection} />
       <Route path="/insertion" component={Insertion} />
       <Route path="/quick" component={Quick} />
+      <Route path="/merge" component={Merge} />
     </div>
   );
 }

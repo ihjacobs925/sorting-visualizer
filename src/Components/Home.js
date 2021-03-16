@@ -66,6 +66,22 @@ const Home = () => {
             <a href="/quick">Quick Sort</a>
           </div>
         </div>
+        <br />
+        <br />
+
+        <div class="card small">
+          <div class="card-image">
+            <img src={Selection2} Style="height:200px" alt="bar graph" />
+
+            <span class="card-title" Style="color:black">
+              <b>Merge Sort</b>
+            </span>
+          </div>
+
+          <div class="card-action">
+            <a href="/merge">Merge Sort</a>
+          </div>
+        </div>
       </div>
     </div>
   );
