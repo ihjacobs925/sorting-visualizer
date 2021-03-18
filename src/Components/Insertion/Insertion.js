@@ -4,9 +4,9 @@ import BarChart from "./BarChart";
 
 function Insertion() {
   const [iteration, setIteration] = useState(0);
-  const [names, setnames] = useState(0);
-  const [colors,setcolors] =useState([
-      "	coral",
+  const [names, setNames] = useState(0);
+  const [colors,setColors] =useState([
+      "coral",
       "lemonchiffon",
       "greenyellow",
       "paleturquoise",
@@ -88,7 +88,7 @@ function Insertion() {
   let col = colors[Math.floor(Math.random()*13)]
   let na = names.toString()
   console.log(names)
-  setnames(names+1)
+  setNames(names+1)
   
   let z = {
     name: na,

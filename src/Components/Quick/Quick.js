@@ -8,10 +8,10 @@ import Part from './Part';
 
 function Quick() {
   const [iteration, setIteration] = useState(0);
-  const[left,setleft] =useState(1)
-  const[right,setright] =useState(1)
-  const [names, setnames] = useState(0);
-  const [colors,setcolors] =useState([
+  const[left,setLeft] =useState(1)
+  const[right,setRight] =useState(1)
+  const [names, setNames] = useState(0);
+  const [colors,setColors] =useState([
       "coral",
       "lemonchiffon",
       "greenyellow",
@@ -114,7 +114,7 @@ function Quick() {
   let col = colors[Math.floor(Math.random()*13)]
   let na = names.toString()
   console.log(names)
-  setnames(names+1)
+  setNames(names+1)
   
   let z = {
     name: na,
@@ -135,7 +135,7 @@ setData(data.map((entry)=>entry ))
         
      
       
-    <button onClick={()=>Part(data,setData,0,data.length-1,setIteration,setleft,setright,left,right)}>Quick sort</button>
+    <button onClick={()=>Part(data,setData,0,data.length-1,setIteration,setLeft,setRight,left,right)}>Quick sort</button>
       <p>Iteration: {iteration}</p>
       <h3 id="final" Style="background-color:green"></h3>
       <h5 id="st" Style="background-color:green"></h5>

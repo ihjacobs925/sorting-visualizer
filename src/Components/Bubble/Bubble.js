@@ -4,10 +4,10 @@ import "./App.css";
 
 function Bubble() {
   const [iteration, setIteration] = useState(0);
-  const [count, setcount] = useState(0);
-  const [names, setnames] = useState(0);
+  const [count, setCount] = useState(0);
+  const [names, setNames] = useState(0);
   const [start, setStart] = useState(false);
-  const [colors, setcolors] = useState([
+  const [colors, setColors] = useState([
     "	coral",
     "lemonchiffon",
     "greenyellow",
@@ -116,7 +116,7 @@ function Bubble() {
   };
 
   let st = () => {
-    setcount(count + 1);
+    setCount(count + 1);
   };
 
   return (
@@ -142,7 +142,7 @@ function Bubble() {
                 let col = colors[Math.floor(Math.random() * 13)];
                 let na = names.toString();
                 console.log(names);
-                setnames(names + 1);
+                setNames(names + 1);
 
                 let z = {
                   name: na,

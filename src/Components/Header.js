@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
 
 const Header = (props) => {
   return (
-    <div className="Title">
-      <h1>Algorithm Sorter</h1>
-      <ul className="Home">
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-      </ul>
-    </div>
-  );
-};
+    <nav className="nav-wrapper blue darken-3">
+      <div className="container">
+        <h4 className="brand-logo "><a className="hide-on-med-and-down">ALGORITHIM SORTER</a></h4>
+        <ul className="right">
+          <li><Link exact to="/">Home</Link></li>
+        </ul>
+      </div>
+    </nav> 
+  )
+}
 
 export default Header;

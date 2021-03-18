@@ -2,7 +2,7 @@ import Quick from './Quick';
 import { partition } from "d3";
 
 
-function partitions(data,low,high,setData,setIteration,setleft,setright,left,right,res){
+function partitions(data,low,high,setData,setIteration,setLeft,setRight,left,right,res){
 
    let pivot=data[high];
     let i=(low-1)
@@ -34,7 +34,7 @@ function partitions(data,low,high,setData,setIteration,setleft,setright,left,rig
     let temp4= data[high];
     data[i+1]=temp4;
     data[high]=temp3;
-    temp4.color="green"
+    // temp4.color="green"
     setIteration(iteration=>iteration+1)
     setData(data.map((entry,index)=>index===high?temp3 :entry))
    
@@ -45,8 +45,8 @@ function partitions(data,low,high,setData,setIteration,setleft,setright,left,rig
   
    
   
-  Part(data,setData,low,i,setIteration,setleft,setright,left,right).then(function(){
-      return Part(data,setData,i+2,high,setIteration,setleft,setright,left,right)
+  Part(data,setData,low,i,setIteration,setLeft,setRight,left,right).then(function(){
+      return Part(data,setData,i+2,high,setIteration,setLeft,setRight,left,right)
   })
    
     
@@ -55,7 +55,7 @@ function partitions(data,low,high,setData,setIteration,setleft,setright,left,rig
         }
 
 
-function Part(data,setData,low,high,setIteration,setleft,setright,left,right){
+function Part(data,setData,low,high,setIteration,setLeft,setRight,left,right){
 
     
   
@@ -66,7 +66,7 @@ return new Promise(function(res,rej){
     console.log(`the value of high is ${high}`)
     if(low<high){
      
-        let pi= partitions(data,low,high,setData,setIteration,setleft,setright,left,right,res);
+        let pi= partitions(data,low,high,setData,setIteration,setLeft,setRight,left,right,res);
         
     }else {
         res()
