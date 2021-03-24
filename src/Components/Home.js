@@ -69,7 +69,7 @@ const Home = () => {
         <br />
         <br />
 
-        <div class="card small">
+        {/* <div class="card small">
           <div class="card-image">
             <img src={Selection2} Style="height:200px" alt="bar graph" />
 
@@ -81,7 +81,7 @@ const Home = () => {
           <div class="card-action">
             <a href="/merge">Merge Sort</a>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
